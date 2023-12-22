@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-    <div class="h-52 bg-gradient-to-r from-cyan-500 to-blue-500 shadow">
+    <div
+        class="h-52 border-b border-slate-400 bg-gradient-to-r from-cyan-500 to-blue-500 shadow-lg"
+    >
         <div class="container max-w-[1024px] relative w-full h-52 mx-auto px-10">
             <h1 class="absolute bottom-4 text-3xl font-bold text-white">Portfolio</h1>
         </div>
