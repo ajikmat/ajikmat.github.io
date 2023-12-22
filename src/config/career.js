@@ -10,11 +10,11 @@ export default [
             'Worked closely with backend developers to test and troubleshoot API integration, ensuring proper handling of data, error responses, and edge cases.',
         ],
         stack: [
-            '/src/assets/svg/flutter.svg',
-            '/src/assets/svg/dart.svg',
-            '/src/assets/svg/vue.svg',
-            '/src/assets/svg/javascript.svg',
-            '/src/assets/svg/bootstrap.svg',
+            'svg/flutter.svg',
+            'svg/dart.svg',
+            'svg/vue.svg',
+            'svg/javascript.svg',
+            'svg/bootstrap.svg',
         ],
     },
     {
@@ -27,7 +27,7 @@ export default [
             'Integrate APIs and collaborate with backend developers to ensure full functionality and integration of applications.',
             'Proficiently maintained and debugged existing Flutter applications, ensuring smooth operation and optimal performance.',
         ],
-        stack: ['/src/assets/svg/flutter.svg', '/src/assets/svg/dart.svg'],
+        stack: ['svg/flutter.svg', 'svg/dart.svg'],
     },
     {
         timeline: 'July 2021 - October 2021',
@@ -38,6 +38,6 @@ export default [
             'Integrated Cloud Firestore database with Flutter framework.',
             'Convert the design into actual coding.',
         ],
-        stack: ['/src/assets/svg/flutter.svg', '/src/assets/svg/dart.svg'],
+        stack: ['svg/flutter.svg', 'svg/dart.svg'],
     },
 ];

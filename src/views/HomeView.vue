@@ -48,7 +48,7 @@
                 class="h-64 flex-shrink-0 border w-64 rounded-lg overflow-clip shadow-lg bg-slate-100"
             >
                 <img
-                    src="/src/assets/images/profile_picture.jpeg"
+                    src="/images/profile_picture.jpeg"
                     class="w-full h-full object-cover object-center"
                     alt="Haziq Mohamad"
                 />
@@ -65,7 +65,7 @@
                     class="group flex p-4 border rounded gap-2 items-center shadow-sm hover:bg-slate-50 cursor-pointer hover:-translate-y-1 transition-all"
                 >
                     <img
-                        :src="stack.svgSrc"
+                        :src="getAssetPath(stack.svgSrc)"
                         class="w-5 h-5 grayscale group-hover:grayscale-0"
                         :alt="stack.title"
                     />
@@ -172,6 +172,11 @@ export default {
             projects,
             careers,
         };
+    },
+    methods: {
+        getAssetPath(path) {
+            return import.meta.env.BASE_URL + path;
+        },
     },
 };
 </script>
