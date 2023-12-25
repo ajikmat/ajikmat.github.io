@@ -15,10 +15,20 @@
                         Experienced
                         <span class="font-semibold text-slate-800">Frontend Developer</span> with
                         over a year's expertise, specializing in
-                        <span class="font-semibold text-emerald-600">VueJS</span> and
-                        <span class="font-semibold text-primary-600">Flutter</span>. Proficient in
-                        crafting powerful and intuitive user interfaces to elevate the digital
-                        experience.
+                        <span class="inline-flex items-baseline">
+                            <span class="font-semibold text-emerald-600">VueJS</span>
+                            <img src="/svg/vue.svg" alt="" class="self-center w-4 h-4 ms-0.5" />
+                        </span>
+                        and
+                        <span class="inline-flex items-baseline">
+                            <span class="font-semibold text-primary-600">Flutter</span>
+                            <img
+                                src="/svg/flutter.svg"
+                                alt=""
+                                class="self-center w-3.5 h-3.5 ms-0.5"
+                            /> </span
+                        >. Proficient in crafting powerful and intuitive user interfaces to elevate
+                        the digital experience.
                     </p>
                 </div>
 
@@ -148,6 +158,12 @@
 
                         <div class="text-sm text-slate-500 mb-4">
                             {{ career.description }}
+                        </div>
+
+                        <div class="md:flex gap-2 justify-start hidden">
+                            <template v-for="stack in career.stack">
+                                <img class="w-6 h-6 grayscale hover:grayscale-0" :src="stack" />
+                            </template>
                         </div>
                     </div>
                 </li>
